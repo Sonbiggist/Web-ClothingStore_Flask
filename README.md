@@ -20,7 +20,7 @@ Join me on this exciting journey as I **build, learn, and share** my projects wi
 
 
 
-# Web Bán Quần Áo bằng Python Flask
+# Web Clothing_Store Python Flask
 
 ```markdown
 # FashionFlare 🛍️
