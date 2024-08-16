@@ -1,0 +1,137 @@
+.card:hover {
+    border-color: #999;
+    box-shadow: 3px 4px linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 6%, rgba(29,9,123,1) 20%, rgba(93,8,131,1) 65%, rgba(20,9,122,1) 91%, rgba(202,0,255,1) 100%);
+}
+
+.card {
+    margin-bottom: 1em;
+    background: rgb(69, 64, 66);
+}
+
+.price {
+    color: seagreen;
+    font-weight: bold;    
+}
+
+.price:before {
+    content: '$';
+}
+
+.shirt {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.stepper-input{
+    display: flex;
+    display: -webkit-flex;
+    color: #222;
+    max-width: 120px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.shirtCart {
+    width: 25px;
+}
+
+.add {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.checkout {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.add:hover {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+
+tr {
+    text-align: center;
+}
+
+.modal-header {
+    border-bottom: 0px;
+}
+
+.counter {
+    font-size: 0.6em;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+
+.increment,
+.decrement{
+        height: 24px;
+        width: 24px;
+        border: 1px solid #222;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #222;
+        font-size: 24px;
+        line-height: 22px;
+        display: inline-block;
+        cursor: pointer;             
+    }
+
+.decrement:hover, 
+.increment:hover {
+    color: green;  
+}
+
+.decrement:active, 
+.increment:active {    
+    background-color: green; 
+    color: white;  
+}
+
+
+.quantity{
+        height: 24px;
+        width: 48px;
+        text-align: center;
+        margin: 0 12px;
+        border-radius: 2px;
+        border: 1px solid #222;
+        
+}
+
+
+ 
+
+.card-body {
+    padding: 1rem;
+    background: rgb(184 204 225);
+  }
+  .card-body:hover {
+    border-color: #999;
+    box-shadow: 3px 4px linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 6%, rgba(29,9,123,1) 20%, rgba(93,8,131,1) 65%, rgba(20,9,122,1) 91%, rgba(202,0,255,1) 100%);
+}
+
+header{
+    background-color: black;
+}
+
+.search 
+{
+    text-align: center;
+    color: rgb(115, 183, 226);
+}
+
+
+

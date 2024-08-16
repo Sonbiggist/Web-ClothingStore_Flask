@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Shirt Admin</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shirt Admin Panel</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="kind">Kind:</label>
+            <select name="kind" required>
+                <option value="casual">Casual</option>
+                <option value="formal">Formal</option>
+            </select>
+
+            <label for="typeClothes">Type of Clothes:</label>
+            <select name="typeClothes" required>
+                <option value="pant">Pant</option>
+                <option value="shoe">Shoe</option>
+                <option value="shirt">Shirt</option>
+            </select>
+
+            <label for="price">Price:</label>
+            <input type="number" name="price" step="0.01" required>
+
+            <label for="onSale">On Sale:</label>
+            <input type="checkbox" name="onSale">
+
+            <label for="onSalePrice">Sale Price:</label>
+            <input type="number" name="onSalePrice" step="0.01" required>
+
+            <label for="file">Image:</label>
+            <input type="file" name="file" accept="image/*" required>
+
+            <button type="submit">Add Shirt</button>
+            
+            <a href="/" class="navbar-brand d-flex align-items-center" style="color: black;">Quay lại trang chủ</a>
+        </form>
+    </div>
+</body>
+</html>

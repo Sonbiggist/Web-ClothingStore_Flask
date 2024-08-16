@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link href="{{ url_for('static',filename='css/login.css') }}" rel="stylesheet" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <title>Spring_Mountain Store - Log In</title>
+    </head>
+    <body>
+    <header>
+        <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-sm box-shadow">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+              <strong><i class="fa  fa-cart-plus"></i> Spring_Mountain Store</strong>
+          </a>
+        </nav>
+    </header><br />
+    <main>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://www.freepnglogos.com/uploads/stitch-png/stitch-sticker-png-13.png" alt="">
+            </div>
+            <div class="text-center mt-4 name">
+                Spring_Mountain Store
+            </div>
+            <form action="/logged/" class="p-3 mt-3" method="post">
+                <div class="form-field d-flex align-items-center">
+                    <span class="far fa-user"></span>
+                    <input type="text" name="username" id="userName" placeholder="Username" autofocus>
+                </div>
+                <div class="form-field d-flex align-items-center">
+                    <span class="fas fa-key"></span>
+                    <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off">
+                </div>
+                <button type="submit" class="btn mt-3">Login</button>
+                <!-- Hiển thị thông điệp lỗi nếu có -->
+                {% if msg %}
+                    <p class="text-danger">{{ msg }}</p>
+                {% endif %}
+            </form>
+            <div class="text-center fs-6">
+              <a href="/new/">Sign up</a>
+            </div>
+        </div>   
+    </main>
+    </body>
+</html>
+
+
